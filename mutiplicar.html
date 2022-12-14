@@ -1,0 +1,35 @@
+ <meta charset="UTF-8">
+
+<h3>multiplicar </h3>
+<script>
+	function saltarlinea(){
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	function imprimir(frase){
+		document.write("<big>"+frase+"</big>")
+		document.write("<br>");
+	}
+
+	
+		imprimir("while");
+		var numero =parseInt(prompt("ingrese el numero que quiere para la tabla"));
+		var contador = 1;
+		while (contador<=10){
+		resultado = numero * contador;
+		imprimir(resultado);
+		contador++;	
+	}
+		imprimir("for");
+		for(var contador = 1;contador<=10;contador++){
+			resultado = numero * contador;
+			imprimir(resultado);
+
+
+		}
+
+
+
+</script>

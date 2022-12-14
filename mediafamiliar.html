@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h3>edad </h3>
+<script>
+	function saltarlinea(){
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	function imprimir(frase){
+		document.write("<big>"+frase+"</big>")
+		document.write("<br>");
+	}
+
+	
+	var numero=parseInt(prompt("ingrese la cantidad de integrantes de tu familia"));
+	var contador=1;
+	var totaledad = 0;
+	while (contador <= numero){
+		
+		edad = parseInt(prompt("ingrese la edad del integrante numero " + contador));
+		contador++;
+		totaledad = totaledad+edad;
+	}
+	promedio = totaledad / numero;
+	imprimir("el promedio de la familia es" + promedio);
+	
+</script>

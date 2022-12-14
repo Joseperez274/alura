@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h3>juego de adivinanza </h3>
+<script>
+	function saltarlinea(){
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	function imprimir(frase){
+		document.write("<big>"+frase+"</big>")
+		document.write("<br>");
+	}
+	function sortear(numeropensado){
+		
+		return Math.round(Math.random()*10);
+	}
+
+	var intentos = 5;
+	var contador = 0;
+	var numeropensado = sortear();
+	while (contador <= intentos){
+	imprimir(numeropensado);
+	var numerolanzado =  parseInt(prompt("ingrese numero entre 1-10"));
+	
+	if (numeropensado == numerolanzado){
+		alert("usted acerto");
+		contador = 5;
+	} 
+
+	if(numerolanzado < numeropensado){
+		alert("usted erró el numero era mayor");
+		contador++;
+	} 
+	if(numerolanzado > numeropensado){
+		alert("el numero era menor")
+		contador++;
+	}
+
+}
+
+</script>
